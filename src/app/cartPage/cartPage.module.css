@@ -1,0 +1,74 @@
+/* cartPage.module.css */
+
+.cartPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 20px; /* Thêm padding cho trang */
+}
+
+.cartPage h1 {
+  font-size: 2.5rem; /* Tăng kích thước font cho tiêu đề */
+  margin-bottom: 20px; /* Tăng khoảng cách phía dưới tiêu đề */
+  text-align: center; /* Căn giữa tiêu đề */
+}
+
+.cartItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Tăng khoảng cách giữa các sản phẩm */
+}
+
+.cartItem {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Tăng độ tròn cho góc */
+  padding: 15px; /* Tăng padding cho sản phẩm */
+  width: 200px; /* Kích thước cố định cho sản phẩm */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tăng độ mờ cho bóng */
+  text-align: center; /* Căn giữa nội dung sản phẩm */
+  transition: transform 0.2s; /* Thêm hiệu ứng cho sản phẩm */
+}
+
+.cartItem:hover {
+  transform: translateY(-5px); /* Hiệu ứng di chuyển nhẹ khi hover */
+}
+
+.cartItemImage {
+  width: 100%; /* Chiều rộng tối đa cho hình ảnh */
+  height: auto;
+  object-fit: cover; /* Căn chỉnh hình ảnh cho đẹp */
+  max-height: 150px; /* Chiều cao tối đa của hình ảnh */
+  border-radius: 8px; /* Độ tròn cho hình ảnh */
+  margin-bottom: 10px; /* Khoảng cách giữa hình ảnh và thông tin sản phẩm */
+}
+
+.cartItemName {
+  font-size: 1.5rem; /* Kích thước font cho tên sản phẩm */
+  margin: 10px 0; /* Khoảng cách trên và dưới cho tên sản phẩm */
+  color: #333; /* Màu chữ cho tên sản phẩm */
+}
+
+.cartItemQuantity {
+  font-size: 1.2rem; /* Kích thước font cho số lượng */
+  color: #666; /* Màu chữ cho số lượng */
+}
+
+.backButton {
+  margin-top: 20px; /* Tăng khoảng cách phía trên nút quay lại */
+  padding: 10px 20px; /* Tăng padding cho nút */
+  font-size: 1.2rem; /* Tăng kích thước chữ cho nút */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s; /* Thêm hiệu ứng cho nút */
+}
+
+.backButton:hover {
+  background-color: #0056b3; /* Màu xanh đậm hơn khi hover */
+}

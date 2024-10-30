@@ -1,0 +1,20 @@
+/* src/components/CartIcon.module.css */
+.cartIcon {
+  position: fixed;
+  font-size: 24px;
+  margin: 10px;
+  z-index: 99;
+  top: 5%;
+  right: 5%;
+}
+
+.cartCount {
+  position: absolute;
+  top: -10px; /* Điều chỉnh vị trí số lượng */
+  right: -10px; /* Điều chỉnh vị trí số lượng */
+  background-color: red; /* Màu nền cho số lượng */
+  color: white; /* Màu chữ */
+  border-radius: 50%; /* Hình tròn */
+  padding: 3px 8px; /* Padding cho số lượng */
+  font-size: 14px; /* Kích thước chữ */
+}
