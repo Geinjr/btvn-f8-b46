@@ -7,7 +7,7 @@ import Link from "next/link";
 import styles from "./cartPage.module.css";
 
 const CartPage = () => {
-  const carts = useSelector(selectCarts); // Lấy carts từ Redux
+  const carts = useSelector(selectCarts); // Lấy carts từ Red
   const products = useSelector(selectProducts); // Lấy products từ Redux
 
   // Tạo một object để dễ dàng lấy thông tin sản phẩm theo productId
